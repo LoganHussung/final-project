@@ -1,5 +1,273 @@
 body {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+.container {
+  display: flex;
+}
+.landing {
+  background-image: url(./Images/LandingPage.jpg);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 3rem;
+  height: 100vh;
+  width: 100%;
+}
+.papyrus {
+  color: white;
+  font-family: Papyrus;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.helveticaNeue {
+  color: white;
+  font-family: Helvetica Neue;
+  font-weight: lighter;
+  height: 50px;
+}
+.homelink {
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  height: 60px;
+  margin-left: 50px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.contentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 93.5vh;
+  margin: 0;
+  padding: 0;
+  z-index: -10;
+}
+.contactContainer {
+  background-image: url(./Images/contactback.jpg);
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  height: 93.5vh;
+  justify-content: center;
+  margin: 0;
+  margin-left: 200px;
+  padding: 0;
+  z-index: -10;
+}
+.contactInfo {
+  border-right: 3px solid white;
+  height: 400px;
+  margin-top: 40px;
+  width: 49%;
+}
+.socialInfo {
+  height: 350px;
+  margin-top: 40px;
+  width: 50%;
+}
+.socialInfo a {
+  color: white;
+  text-decoration: none;
+}
+.calendarInfo {
+  width: 50%;
+}
+.contactInfo ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+.contactInfo h3 {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+.calendarInfo a {
+  color: white;
+  text-decoration: none;
+}
+.sideMargin {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 93vh;
+  position: fixed;
+  width: 180px;
+}
+.marginLogo {
+  margin: 10px auto;
+}
+.sideLogo {
+  font-family: Papyrus;
+  margin-top: 300px;
+  padding-top: 80px;
+  -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(270deg); /* IE 9 */
+  transform: rotate(270deg);
+  width: 500px;
+}
+.homePics {
+  display: flex;
+  margin-left: 180px;
+}
+.longPics {
+  display: flex;
+  flex-direction: column;
+}
+.widePics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hpic {
+  border: 3px solid white;
+  width: 100%;
+}
+.apic {
+  border: 3px solid white;
+  width: 25%;
+}
+.wpic {
+  border: 3px solid white;
+}
+.aboutSideMargin {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.aboutSideMargin p {
+  padding: 0 50px;
+}
+.aboutMeContainer {
+  display: flex;
+  height: 93.5vh;
+  margin: 0;
+  padding: 0;
+  z-index: -10;
+}
+.aboutPics {
+  display: flex;
+  height: 100%;
+}
+.stacked {
+  display: flex;
+  flex-direction: column;
+}
+.stacked img {
+  height: 369.5px;
+  width: 400px;
+}
+.nav {
+  align-items: flex-end;
+  background-color: #670B0B;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+}
+.navItem a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+/*Prices Page*/
+
+.pricesContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.priceTitle {
+  font-size: 4.5rem;
+  padding-left: 20px;
+}
+
+.weddingCat {
+  background-image: url(./Images/prices1.jpg);
+  background-position: bottom;
+  background-size: cover;
+  min-height: 800px;
+  text-align: left;
+}
+
+.weddingCat ul {
+  margin: 0;
+  padding: 20px;
+}
+
+.weddingCat li {
+  font-size: 2rem;
+  list-style: none;
+}
+
+.seniorCat {
+  background-image: url(./Images/prices2.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  min-height: 800px;
+  text-align: left;
+}
+
+.seniorCat ul {
+  margin: 0;
+  padding: 20px;
+}
+
+.seniorCat li {
+  font-size: 2rem;
+  list-style: none;
+}
+
+.portraitCat {
+  background-image: url(./Images/prices3.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 800px;
+  text-align: left;
+}
+
+.portraitCat ul {
+  margin: 0;
+  padding: 20px;
+}
+
+.portraitCat li {
+  font-size: 2rem;
+  list-style: none;
+}
+
+.sideLogoPrice {
+  font-family: Papyrus;
+  margin-left: 80%;
+  margin-top: 130px;
+  -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(270deg); /* IE 9 */
+  transform: rotate(270deg);
+  width: 400px;
+}
+
+.sideLogoPrice2 {
+  color: white;
+  font-family: Papyrus;
+  margin-left: 80%;
+  margin-top: 130px;
+  -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(270deg); /* IE 9 */
+  transform: rotate(270deg);
+  width: 400px;
 }
